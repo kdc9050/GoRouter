@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'constants.dart';
 import 'login_state.dart';
@@ -100,6 +99,7 @@ class MyRouter {
         if (inAuthPages && loggedIn) return '/shop';
         //notInAuth && false => go to loginPage
         if (!inAuthPages && !loggedIn) return '/login';
+        return null;
       },
       refreshListenable: loginState,
       debugLogDiagnostics: true);

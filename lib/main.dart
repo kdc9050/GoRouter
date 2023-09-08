@@ -34,7 +34,6 @@ import 'package:provider/provider.dart';
 
 import 'login_state.dart';
 import 'router.dart';
-import 'ui/login.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -48,7 +47,6 @@ class MyApp extends StatelessWidget {
 
   const MyApp({Key? key, required this.loginState}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
